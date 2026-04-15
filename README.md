@@ -48,29 +48,40 @@ We created a table in:
 
 ### 📸 Screenshot:
 
-![DynamoDB Table](images/dynamodb-table.png)
+![DynamoDB Table](photos/1.png)
+![DynamoDB Table](photos/10.png)
 
 ---
 
 ## 🔹 Step 2: Create Lambda Functions
 
 We created **3 AWS Lambda functions** for different operations:
+![](photos/2.png)
+
 
 ### 🔸 (a) CreateTask Function
 
 * Inserts task into DynamoDB
 
+![](photos/3.png)
+![](photos/4.png)
+
 ### 🔸 (b) GetTasks Function
 
 * Retrieves all tasks
+
+![](photos/5.png)
+![](photos/6.png)
 
 ### 🔸 (c) DeleteTask Function
 
 * Deletes task using `taskId`
 
-### 📸 Screenshot:
+![](photos/7.png)
+![](photos/8.png)
+![](photos/9.png)
 
-*Add screenshots of each function (CreateTask, GetTasks, DeleteTask) here*
+
 
 ---
 
@@ -79,8 +90,8 @@ We created **3 AWS Lambda functions** for different operations:
 All three functions are visible in AWS Lambda dashboard.
 
 ### 📸 Screenshot:
+![](photos/22.png)
 
-*Add screenshot showing all Lambda functions in one frame*
 
 ---
 
@@ -102,8 +113,12 @@ We created an API using:
 5. Generated Invoke URL
 
 ### 📸 Screenshot:
+![](photos/11.png)
+![](photos/12.png)
+![](photos/13.png)
+![](photos/14.png)
+![](photos/15.png)
 
-*Add step-by-step screenshots of API Gateway creation*
 
 ---
 
@@ -123,18 +138,27 @@ We tested all APIs using:
   "taskName": "Final Demo"
 }
 ```
+## 📸 Screenshot:
+![](photos/16.png)
+![](photos/17.png)
 
 ### 🔸 Get Tasks (GET)
 
 * URL: `/get-all-tasks`
 
+## 📸 Screenshot:
+![](photos/18.png)
+
 ### 🔸 Delete Task (DELETE)
 
 * URL: `/delete-task`
 
-### 📸 Screenshot:
+## 📸 Screenshot:
+![](photos/19.png)
 
-*Add Postman screenshots for all API calls*
+### Result : After deleting task whose id is 101
+## 📸 Screenshot:
+![](photos/20.png)
 
 ---
 
@@ -147,8 +171,9 @@ After API execution:
 * Data was deleted successfully
 
 ### 📸 Screenshot:
+![](photos/21.png)
 
-*Add screenshot of DynamoDB table showing data*
+
 
 ---
 
